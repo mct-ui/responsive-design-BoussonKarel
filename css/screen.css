@@ -530,9 +530,15 @@ a:focus {
 }
 
 @media (min-width: 768px) {
+    .c-title-icon__icon {
+        height: 90px;
+    }
 }
 
 @media (min-width: 1200px) {
+    .c-title-icon__icon {
+        height: 110px;
+    }
 }
 
 
