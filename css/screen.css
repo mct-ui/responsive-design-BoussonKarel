@@ -514,6 +514,29 @@ a:focus {
 }
 
 /*
+    Component: Title icon
+    ---
+    Special type of title with icon
+*/
+
+.c-title-icon {
+    display: flex;
+}
+
+.c-title-icon__icon {
+    height: 70px;
+    margin-right: 16px;
+    fill: #202024;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+
+/*
     Component: Lead
     ---
     Lead type treatments to style everything that differs from standard typography elements
@@ -652,6 +675,72 @@ a:focus {
     background-color: #fff;
 }
 
+/*
+    Component: footer
+    ---
+    Main footer of the website
+*/
+
+.c-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-footer__logo {
+    width: 100%;
+}
+
+.c-footer__nav {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .c-footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-footer__logo {
+        display: flex;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+    .c-footer__nav {
+        width: auto;
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .c-footer {
+        justify-content: space-between;
+    }
+
+    .c-footer__nav {
+        padding: 0;
+    }
+
+    .c-footer__logo + .c-footer__nav {
+        order: -1;
+    }
+
+    .c-footer__logo {
+        width: auto;
+    }
+
+    /* Test van real center volgens CSS tricks */
+    .c-footer__logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .c-footer__logo > .c-logo {
+        margin-bottom: 0;
+    }
+}
 
 /*------------------------------------*\
   #UTILITIES
