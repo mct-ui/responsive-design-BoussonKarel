@@ -220,6 +220,10 @@ a:focus {
     }
 }
 
+.o-row--neutral-x-light {
+    background: #F7F7F7;
+}
+
 /*
     Objects: Container
     ---
